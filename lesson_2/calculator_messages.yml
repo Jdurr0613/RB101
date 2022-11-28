@@ -1,0 +1,12 @@
+# configuration file holding the messages used in the calculator
+
+welcome: "Welcome to Calculator! Enter your name:"
+name_error: "Make sure to enter a valid name"
+first_num: "What is the first number"
+second_num: "What is the second number"
+invalid_num: "That is not a valid number"
+div_zero: "division by zero is not allowed, try a different operation"
+operation_error: "That is not a valid operation. Must choose 1, 2, 3, or 4"
+result: "The result is "
+another_calc: "Would you like to do another calculation? (Y to calculate again)"
+goodbye: "Thank you and good-bye"

@@ -1,0 +1,10 @@
+
+welcome: "Welcome to the loan calculator. Let's get started:"
+loan_amount: "What is the total amount of the loan?"
+loan_amount_error: "That loan amount does not look accurate. Try it again"
+apr: "What is the Annual Percentage Rate?"
+apr_error: "That annual rate does not seem right. Try it again"
+loan_duration: "What is the duration of the loan in years?"
+duration_confirmation: "Did you enter the duration in months?"
+duration_error: "That duration does not seem right. Try it again"
+payment: "Your estimated monthly payment is $"
