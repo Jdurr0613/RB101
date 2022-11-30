@@ -76,8 +76,12 @@ loan_months = loan_years.to_f * 12
 # impliment the formula to calculate the monthly payment
 
 monthly_payment = loan_amount.to_f * (monthly_rate / (1 - (1 + monthly_rate)**(0 - loan_months)))
+
+# calculate total payment and total interest
+
 total_payment = loan_months * monthly_payment
 total_interest = total_payment - loan_amount.to_f
+
 # report the final amounts to the user
 
 prompt(MESSAGE['payment'] + monthly_payment.round(2).to_s)
