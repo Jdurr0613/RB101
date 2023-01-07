@@ -3,16 +3,9 @@
 # given integer.
 
 def stringy(num)
-  string_arr = []
-  loop do
-    if string_arr.size % 2 == 0
-      string_arr << '1'
-    else
-      string_arr << '0'
-    end
-    break if string_arr.size == num
-  end
-  string_arr.join
+  string = ''
+  (1..num).each { |number| number.even? ? string << '0' : string << '1' }
+  string
 end
 
 # Examples:
@@ -21,5 +14,19 @@ puts stringy(6) == '101010'
 puts stringy(9) == '101010101'
 puts stringy(4) == '1010'
 puts stringy(7) == '1010101'
-
 # The tests above should print true.
+
+def second_stringy(num, switch = 1)
+  string = ''
+  if switch.zero?
+    (1..num).each { |number| number.even? ? string << '1' : string << '0' }
+  else
+    (1..num).each { |number| number.even? ? string << '0' : string << '1' }
+  end
+  string
+end
+
+puts second_stringy(6) == '101010'
+puts second_stringy(9) == '101010101'
+puts second_stringy(4, 0) == '0101'
+puts second_stringy(7, 0) == '0101010'
