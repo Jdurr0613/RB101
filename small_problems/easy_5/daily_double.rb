@@ -40,7 +40,6 @@
 # -Return the joined char_arr
 #
 # CODE
-
 def crunch(text)
   char_arr = text.split('')
   count = 0

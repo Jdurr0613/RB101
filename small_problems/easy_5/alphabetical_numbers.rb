@@ -46,6 +46,12 @@
 #     -Return the return array
 #   
 # CODE
+def test_method()
+  loop do
+
+  end
+end
+
 
 def alpha_number_hash()
   num_words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six',
